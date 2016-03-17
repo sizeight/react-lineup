@@ -37,7 +37,6 @@ test -f ~/.bashrc && source ~/.bashrc
   $ `vim ~/.bashrc`  
 ```
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 ```
   $ `source ~/.bash_profile`
@@ -48,11 +47,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 We use example project: `react-lineup`
 - $ `mkvirtualenv lineup-venv`
 - $ `workon lineup-venv`
-- (lineup-venv)$ `mkdir -p /tmp/thegrid && cd /tmp/thegrid && curl http://nodejs.org/dist/node-latest.tar.gz | tar xvz`
-- (lineup-venv)$ `cd /tmp/thegrid/node-v5.9.0 && ./configure --prefix=$VIRTUAL_ENV`
-- (lineup-venv)$ `cd /tmp/thegrid/node-v5.9.0 && make install`
+- (lineup-venv)$ `mkdir -p /tmp/lineup && cd /tmp/thegrid && curl http://nodejs.org/dist/node-latest.tar.gz | tar xvz`
+- (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && ./configure --prefix=$VIRTUAL_ENV`
+- (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && make install`
 - (lineup-venv)$ `npm install -g webpack`
-- (lineup-venv)$ `cd ~/Sites/react-lineup && npm install`
+- (lineup-venv)$ `cd ~/Sites/lineup && npm install`
 
 ## References
 - [Macbook setup gist by millermedeiros](https://gist.github.com/millermedeiros/6615994)
