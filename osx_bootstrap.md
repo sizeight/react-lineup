@@ -46,9 +46,10 @@ source /usr/local/bin/virtualenvwrapper.sh
   $ `source ~/.bash_profile`
 - Check if it works OK.  
   $ `workon` # should see no error message here.
-- Basic commands
-  $ `workon lineup-venv`
-  $ `deactivate`
+
+Basic commands
+- $ `workon lineup-venv`
+- $ `deactivate`
 
 ## 4. Node.js and npm modules
 - $ `brew install node`
