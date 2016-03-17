@@ -33,7 +33,7 @@ const initialState = [
     },
 ];
 
-export default function acts(state = initialState, action) {
+export default function events(state = initialState, action) {
   switch (action.type) {
     default:
       return state;
