@@ -47,7 +47,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 We use example project: `react-lineup`
 - $ `mkvirtualenv lineup-venv`
 - $ `workon lineup-venv`
-- (lineup-venv)$ `mkdir -p /tmp/lineup && cd /tmp/thegrid && curl http://nodejs.org/dist/node-latest.tar.gz | tar xvz`
+- (lineup-venv)$ `mkdir -p /tmp/lineup && cd /tmp/lineup && curl http://nodejs.org/dist/node-latest.tar.gz | tar xvz`
 - (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && ./configure --prefix=$VIRTUAL_ENV`
 - (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && make install`
 - (lineup-venv)$ `npm install -g webpack`
