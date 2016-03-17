@@ -56,6 +56,10 @@ Basic commands
 - $ `npm install -g webpack`
 - $ `cd ~/Sites/react-lineup && npm install`
 
+## 5. Project dev setup
+- (lineup-venv)$ `cd ~/Sites/react-lineup && python server.py`
+- $ `cd ~/Sites/react-lineup && webpack --progress --colors --watch`
+
 ## Git Basics
 Some basic commands to use: 
 - $ `cd ~/Sites/ && git clone https://github.com/sizeight/react-lineup.git`
