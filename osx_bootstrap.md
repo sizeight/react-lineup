@@ -58,6 +58,8 @@ Some basic commands to use:
 - $ `git status`
 - $ `git add /path/to/file` or `git add -A`. # The latter will add all your new files to be commited.
 - $ `git commit -m 'your commit message here'` or `git commit -am 'your commit message here'` # the latter will stage all changes for commit.
+- $ `git pull origin master`
+- $ `git push origin master`
 
 
 
