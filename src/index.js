@@ -5,10 +5,10 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
-import lineupApp from './reducers';
-import App from './components/App';
+import rootReducer from './reducers/rootReducer';
+import App from './containers/App';
 
-let store = createStore(lineupApp);
+let store = createStore(rootReducer);
 
 render(
   <Provider store={store}>
