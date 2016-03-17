@@ -10,13 +10,17 @@
   * $ `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
   * [Install instructions](http://brew.sh/)
 - Install [Sublime Text 3](https://www.sublimetext.com/3) and [package control](https://packagecontrol.io/installation)
+  * `cmd + shift + p` select package control: install package. Install `Babel`, `Markdown Preview`.
 - Make a home for all your coding projects
   * $ `mkdir -p ~/Sites`
+- Add `Chrome React Developer Tools` to Google Chrome.
 
 ## 2. Essentials
 Install software using homebrew, neatly places things at `/usr/local/bin`
 - $ `brew update`
 - $ `brew install git`
+- $ `git config --global credential.helper cache`
+- $ `git config --global user.name "yourusername"`
 - $ `brew install wget`
 
 ## 3. Python
@@ -43,10 +47,17 @@ source /usr/local/bin/virtualenvwrapper.sh
 - Check if it works OK.  
   $ `workon` # should see no error message here.
 
-## 4 Node.js and npm modules
+## 4. Node.js and npm modules
 - $ `brew install node`
 - $ `npm install -g webpack`
 - $ `cd ~/Sites/lineup && npm install`
+
+## Git Basics
+Some basic commands to use: 
+- $ `cd ~/Sites/ && git clone https://github.com/sizeight/react-lineup.git`
+- $ `git status`
+- $ `git add /path/to/file` or `git add -A`. # The latter will add all your new files to be commited.
+- $ `git commit -m 'your commit message here'` or `git commit -am 'your commit message here'` # the latter will stage all changes for commit.
 
 
 
