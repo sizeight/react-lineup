@@ -43,15 +43,12 @@ source /usr/local/bin/virtualenvwrapper.sh
 - Check if it works OK.  
   $ `workon` # should see no error message here.
 
-## 4. Node.js (self contained within a virtualenv for project)
-We use example project: `react-lineup`
-- $ `mkvirtualenv lineup-venv`
-- $ `workon lineup-venv`
-- (lineup-venv)$ `mkdir -p /tmp/lineup && cd /tmp/lineup && curl http://nodejs.org/dist/node-latest.tar.gz | tar xvz`
-- (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && ./configure --prefix=$VIRTUAL_ENV`
-- (lineup-venv)$ `cd /tmp/lineup/node-v5.9.0 && make install`
-- (lineup-venv)$ `npm install -g webpack`
-- (lineup-venv)$ `cd ~/Sites/lineup && npm install`
+## 4 Node.js and npm modules
+- $ `brew install node`
+- $ `npm install -g webpack`
+- $ `cd ~/Sites/lineup && npm install`
+
+
 
 ## References
 - [Macbook setup gist by millermedeiros](https://gist.github.com/millermedeiros/6615994)
