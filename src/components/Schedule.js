@@ -4,11 +4,12 @@ import ScheduleRow from './ScheduleRow';
 
 const propTypes = {
   events: PropTypes.array.isRequired,
+  onFavouriteEvent: PropTypes.func.isRequired,
 };
 
 class Schedule extends React.Component {
   render() {
-    const { events } = this.props;
+    const { events, onFavouriteEvent } = this.props;
 
     return (
       <table className="schedule">
@@ -16,26 +17,17 @@ class Schedule extends React.Component {
           <ScheduleRow
             time='13:00'
             events={events}
+            onFavouriteEvent={onFavouriteEvent}
           />
           <ScheduleRow
             time='13:15'
             events={events}
+            onFavouriteEvent={onFavouriteEvent}
           />
           <ScheduleRow
             time='13:30'
             events={events}
-          />
-          <ScheduleRow
-            time='13:45'
-            events={events}
-          />
-          <ScheduleRow
-            time='14:00'
-            events={events}
-          />
-          <ScheduleRow
-            time='14:15'
-            events={events}
+            onFavouriteEvent={onFavouriteEvent}
           />
         </tbody>
       </table>

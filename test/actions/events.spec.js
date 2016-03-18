@@ -1,11 +1,11 @@
 import expect from 'expect';
 
-// import { FAVOURITE_EVENT } from '../src/constants/ActionTypes';
+import { FAVOURITE_EVENT } from '../../src/constants/ActionTypes';
 
-// import { favouriteEvent } from '../src/actions';
+import { favouriteEvent } from '../../src/actions/ActionCreators';
 
 describe('events actions', () => {
-  it(('favouriteEvent()'), () => {
+  it('favouriteEvent()', () => {
     const expectedAction = {
       type: FAVOURITE_EVENT,
       eventId: 3,

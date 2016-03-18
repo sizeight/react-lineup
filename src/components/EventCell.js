@@ -1,13 +1,15 @@
 import React, { PropTypes } from 'react';
 
 const propTypes = {
+  id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  favourited: PropTypes.bool.isRequired,
+  onFavouriteEvent: PropTypes.func.isRequired,
 };
 
 class EventCell extends React.Component {
   render() {
-    const { title } = this.props;
+    const { id, title, favourited, onFavouriteEvent } = this.props;
 
     return (
       <td className="event-cell">
@@ -15,9 +17,10 @@ class EventCell extends React.Component {
           href=""
           onClick={(e) => {
             e.preventDefault();
-            console.log("Clicked");
+            console.log(id);
+            onFavouriteEvent(id);
           }}
-        >O</a>
+        >{favourited ? 'X' : 'O'}</a>
         {' '}
         {title}
       </td>

@@ -6,11 +6,12 @@ import EventCell from './EventCell';
 const propTypes = {
   time: PropTypes.string.isRequired,
   events: PropTypes.array.isRequired,
+  onFavouriteEvent: PropTypes.func.isRequired,
 };
 
 class ScheduleRow extends React.Component {
   render() {
-    const { time, events } = this.props;
+    const { time, events, onFavouriteEvent } = this.props;
 
     return (
       <tr className="schedule-row">
@@ -19,7 +20,10 @@ class ScheduleRow extends React.Component {
         />
         {events.map((event, i) =>
           <EventCell
+            id={event.id}
             title={event.title}
+            favourited={event.favourited}
+            onFavouriteEvent={onFavouriteEvent}
             key={i}
           />
         )}

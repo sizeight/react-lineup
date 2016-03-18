@@ -1,0 +1,1 @@
+export const FAVOURITE_EVENT = 'FAVOURITE_EVENT';
