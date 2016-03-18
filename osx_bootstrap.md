@@ -25,8 +25,8 @@ Install software using homebrew, neatly places things at `/usr/local/bin`
 
 ## 3. Python
 - $ `brew install python` # Homebrew’s Python includes the latest versions of Pip.
-- Make sure you're using the correct Python:  
-  $ `vim ~/.bash_profile`  
+- Make sure you're using the correct Python:
+  $ `vim ~/.bash_profile`
 ```
 # Ensure user-installed binaries take precedence
 export PATH=/usr/local/bin:$PATH
@@ -37,14 +37,14 @@ test -f ~/.bashrc && source ~/.bashrc
 - $ `which python`
 - $ `pip install virtualenv`
 - $ `pip install virtualenvwrapper`
-- $ `mkdir -p ~/.virtualenvs`  
-  $ `vim ~/.bashrc`  
+- $ `mkdir -p ~/.virtualenvs`
+  $ `vim ~/.bashrc`
 ```
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 ```
   $ `source ~/.bash_profile`
-- Check if it works OK.  
+- Check if it works OK.
   $ `workon` # should see no error message here.
 
 Basic commands
@@ -61,7 +61,7 @@ Basic commands
 - $ `cd ~/Sites/react-lineup && webpack --progress --colors --watch`
 
 ## Git Basics
-Some basic commands to use: 
+Some basic commands to use:
 - $ `cd ~/Sites/ && git clone https://github.com/sizeight/react-lineup.git`
 - $ `git status`
 - $ `git add /path/to/file` or `git add -A`. # The latter will add all your new files to be commited.
@@ -69,7 +69,16 @@ Some basic commands to use:
 - $ `git pull origin master`
 - $ `git push origin master`
 
+## Sublime Text Setup
+- Package Control Instalation
+https://packagecontrol.io/installation
 
+- JavaScrip Code Syntax for Sublime
+CTRL+SHIFT+P -> Install Package -> Babel
+
+- Optimized color scheme
+CTRL+SHIFT+P -> Install Package -> Oceanic Next Color Scheme
+Preferences -> Color Scheme -> Oceanic Next Color Scheme - > Oceanic Next
 
 ## References
 - [Macbook setup gist by millermedeiros](https://gist.github.com/millermedeiros/6615994)
