@@ -47,10 +47,18 @@ source /usr/local/bin/virtualenvwrapper.sh
 - Check if it works OK.  
   $ `workon` # should see no error message here.
 
+Basic commands
+- $ `workon lineup-venv`
+- $ `deactivate`
+
 ## 4. Node.js and npm modules
 - $ `brew install node`
 - $ `npm install -g webpack`
-- $ `cd ~/Sites/lineup && npm install`
+- $ `cd ~/Sites/react-lineup && npm install`
+
+## 5. Project dev setup
+- (lineup-venv)$ `cd ~/Sites/react-lineup && python server.py`
+- $ `cd ~/Sites/react-lineup && webpack --progress --colors --watch`
 
 ## Git Basics
 Some basic commands to use: 
