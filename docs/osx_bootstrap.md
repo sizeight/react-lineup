@@ -76,6 +76,14 @@ https://packagecontrol.io/installation
 - JavaScript Code Syntax for Sublime
 CTRL+SHIFT+P -> Install Package -> Babel
 
+#### Setting as the default syntax
+
+To set it as the default syntax for a particular extension:
+  1. Open a file with that extension,
+  2. Select `View` from the menu,
+  3. Then `Syntax` `->` `Open all with current extension as...` `->` `Babel` `->` `JavaScript (Babel)`.
+  4. Repeat this for each extension (e.g.: `.js` and `.jsx`).
+
 - Optimized color scheme
 CTRL+SHIFT+P -> Install Package -> Oceanic Next Color Scheme
 Preferences -> Color Scheme -> Oceanic Next Color Scheme - > Oceanic Next
