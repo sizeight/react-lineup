@@ -73,7 +73,7 @@ Some basic commands to use:
 - Package Control Instalation
 https://packagecontrol.io/installation
 
-- JavaScrip Code Syntax for Sublime
+- JavaScript Code Syntax for Sublime
 CTRL+SHIFT+P -> Install Package -> Babel
 
 - Optimized color scheme
